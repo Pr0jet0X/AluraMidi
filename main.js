@@ -1,12 +1,11 @@
 function tocaSom (seletorAudio) {
     const elemento = document.querySelector(seletorAudio);
 
-    if (elemenro === null) {
-        alert ('Não sou vidente pra adivinhar de onde tu tirou esse elemento')
-    }
-
-    if (elemento != null) {
+    if (elemento && elemento.localName === 'audio') {
         elemento.play();
+    }
+    else{
+         alert ('Não sou vidente pra adivinhar de onde tu tirou esse elemento')
     }
 
     //parei nos 8:00
